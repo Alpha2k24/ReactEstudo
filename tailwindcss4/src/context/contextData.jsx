@@ -31,12 +31,12 @@ function reducer(state, action) {
         case "reset":
             return { ...initialValue, history: state.history }
         case "rename":
-            const names = ["GhostGrizzly", "Gaspar", "Eude", "Sidias", "Abigail", "Natyo", "Emília", "Nélio", "Ariane", "Adriel"]
+            { const names = ["GhostGrizzly", "Gaspar", "Eude", "Sidias", "Abigail", "Natyo", "Emília", "Nélio", "Ariane", "Adriel"]
 
             if (state.contador >= names.length - 1) {
                 return { ...state, name: names[state.contador], contador: 1 }
             }
-            return { ...state, name: names[state.contador], contador: state.contador + 1 }
+            return { ...state, name: names[state.contador], contador: state.contador + 1 } }
         default:
             break;
     }

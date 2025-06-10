@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import React, { Suspense } from 'react';
+import PlanetVideoPlayer from "./components/UiModerna"
 import './App.css';
-import Pessoas from './components/pessoas';
-import Login from './pages/login';
-import Carrocel from './pages/carrocel';
 
 
 function App() {
 
   return (
-    <>
-      <Carrocel/>
-    </>
+    <div className='flex flex-col items-center justify-center h-screen bg-black'>
+      <Suspense fallback={<div className="text-white">Carregando...</div>}>
+        <PlanetVideoPlayer/>
+      </Suspense>
+    </div>
   );
 }
 

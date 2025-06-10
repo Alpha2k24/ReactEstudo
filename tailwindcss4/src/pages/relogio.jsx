@@ -1,4 +1,4 @@
-import { useReducer, useEffect, useRef, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import ContextData from '../context/contextData';
 import { Link } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ function Relogio() {
             const interval = setInterval(() => dispatch({ type: "inc" }), 0.1);
             return () => clearInterval(interval)
         }
+        console.log(state.history)
     }, [state.start]);
 
     useEffect(() => {

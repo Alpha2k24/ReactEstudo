@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+body{
+    zoom: 1;
+}
+
+.controls-hidden::-webkit-media-controls {
+  display: none !important;
+}
+.controls-hidden::-moz-media-controls {
+  display: none !important;
+}
+.controls-hidden::-ms-media-controls {
+  display: none !important;
+}
+.controls-hidden {
+  pointer-events: none; /* impede clique nos controles se algum vazar */
+}

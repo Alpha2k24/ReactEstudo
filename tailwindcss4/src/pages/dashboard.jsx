@@ -1,8 +1,7 @@
-import axios from "axios";
 import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-export default function Dashboard(params) {
+export default function Dashboard() {
     const { id } = useParams()
     const navigate = useNavigate()
     const items = [
