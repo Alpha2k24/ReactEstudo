@@ -11,6 +11,7 @@ import Dashboard from './pages/dashboard.jsx'
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
+  { path: "/ReactEstudo", element: <App /> },
   { path: "/relogio", element: <Relogio /> },
   { path: "/dashboard/:id", element: <Dashboard /> },
   { path: "/*", element: <Info /> },
